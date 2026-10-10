@@ -1,0 +1,33 @@
+:root{--wood:#3b2417;--cream:#fbf6ee;--gold:#b8863b;--red:#a82a2a;--green:#1f4d3a}
+*{box-sizing:border-box;margin:0}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--wood);line-height:1.6}
+h1,h2,h3,.logo{font-family:'Playfair Display',Georgia,serif;font-weight:700}
+img{max-width:100%;display:block}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;position:sticky;top:0;background:rgba(251,246,238,.95);backdrop-filter:blur(6px);z-index:5;border-bottom:1px solid #e8dcc8}
+.logo{color:var(--wood);text-decoration:none;font-size:1.2rem}
+nav a{margin-left:16px;color:var(--wood);text-decoration:none;font-size:.95rem}
+.btn{display:inline-block;background:var(--green);color:#fff!important;padding:14px 28px;border-radius:40px;text-decoration:none;margin-top:16px;transition:.2s}
+.btn:hover{background:var(--gold);transform:translateY(-2px)}
+.btn.small{padding:6px 16px;margin:0 0 0 16px}
+.hero{display:grid;gap:24px;padding:36px 20px;max-width:1100px;margin:auto;align-items:center}
+.hero img{border-radius:20px;box-shadow:0 20px 50px rgba(59,36,23,.3)}
+.eyebrow{text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-size:.8rem}
+h1{font-size:2.4rem;line-height:1.15;margin:8px 0 14px}
+.lead{font-size:1.1rem}
+section h2{text-align:center;font-size:1.9rem;margin-bottom:24px}
+.work,.how,.contact{padding:48px 20px;max-width:1100px;margin:auto}
+.grid{display:grid;gap:18px}
+figure img{border-radius:16px;width:100%;object-fit:cover}
+figcaption{font-size:.9rem;margin-top:8px;opacity:.8}
+.note{background:var(--wood);color:var(--cream);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:center}
+.how{max-width:none;background:var(--wood);color:var(--cream)}
+.how ol{list-style:none;padding:0;display:grid;gap:20px;max-width:900px;margin:auto;counter-reset:s}
+.how li{counter-increment:s;padding:20px 20px 20px 70px;position:relative;background:rgba(255,255,255,.07);border-radius:14px}
+.how li::before{content:counter(s);position:absolute;left:20px;top:16px;font-size:2rem;color:var(--gold);font-family:Georgia,serif}
+.how b,.how span{display:block}
+.contact{text-align:center}
+.small{font-size:.9rem;margin-top:12px;opacity:.7}
+footer{text-align:center;padding:24px;font-size:.85rem;opacity:.7}
+@media(min-width:800px){.hero{grid-template-columns:1fr 1fr;padding:70px 20px}h1{font-size:3.4rem}.grid{grid-template-columns:2fr 1fr}.wide{grid-row:span 2}.how ol{grid-template-columns:repeat(3,1fr)}}
+.more{text-align:center;margin-top:28px;font-style:italic}
+.mark{display:inline-block;height:32px;width:32px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:10px}
